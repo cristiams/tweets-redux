@@ -3,7 +3,7 @@ const initialProps = {
   tweets: []
 }
 
-export default function(state = initialProps, action) {
+const tweetsReducer = function(state = initialProps, action) {
 
   switch (action.type) {
     
@@ -25,3 +25,5 @@ export default function(state = initialProps, action) {
       return state;
   }
 }
+
+export default tweetsReducer;

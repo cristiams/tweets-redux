@@ -3,7 +3,7 @@ const initialProps = {
   errorFormAddTweet: false
 }
 
-export default function(state = initialProps, action) {
+const validationsReducer = function(state = initialProps, action) {
 
   switch (action.type) {
     
@@ -18,3 +18,5 @@ export default function(state = initialProps, action) {
       return state;
   }
 }
+
+export default validationsReducer;
